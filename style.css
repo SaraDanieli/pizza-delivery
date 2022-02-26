@@ -1,0 +1,383 @@
+body {
+  font-family: 'Exo', sans-serif;
+  font-size: 14pt;
+  margin: 0;
+  font-weight: 400;
+}
+
+h2 {
+  padding-left: 20px;
+}
+
+h2, h3, p {
+  color: #73330E;
+}
+
+.button {
+  color: #BF5B04;
+  cursor: pointer;
+  background-color: #F2F0D8;
+  letter-spacing: 3px;
+  transition-duration: 0.4s;
+  border: 1px solid #BF5B04;
+}
+
+/*-----------------------header------------------ */
+/*-------logo--------*/
+.header {
+  height: 150px;
+  background-color: #F2F0D8;
+}
+
+.logo {
+  float: left;
+  width: 600px;
+}
+
+.pizza {
+  margin: 20px 0 0 20px;
+}
+
+.pizza:hover {
+  transform: rotate(360deg);
+  transition: 3s;
+}
+
+.pizzastation {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 10px;
+  display: inline;
+  position: relative;
+  left: 60px;
+  bottom: 40px;
+}
+
+.pizzastation a {
+  text-decoration: none;
+  color: #BF5B04;
+}
+
+/*------login and sign up header------ */
+.top-right-header {
+  padding-top: 40px;
+  float: left;
+  width: 800px;
+}
+
+.top-right-header ul {
+  float: right;
+}
+
+.top-right-header li {
+  list-style-type: none;
+  display: inline;
+  padding: 0 30px;
+}
+
+.registering {
+  padding: 10px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.registering:hover {
+  background-color: #BF5B04;
+  color: #F2F0D8;
+}
+
+.registering:active {
+  color: black;
+}
+
+.cart {
+  color: #73330E;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.cart:hover {
+  font-size: 25px;
+}
+
+.cart .badge {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  padding: 5px 10px;
+  color: #BF5B04;
+}
+
+/*----------------------------Navbar----------------------*/
+.navbar {
+  background-color: #BF5B04;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar a {
+  color: #F2F0D8;
+  text-decoration: none;
+  padding: 40px;
+  letter-spacing: 3px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar ul {
+  margin: 15px;
+  margin-left: 35px;
+  padding-right: 22px;
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #d9a66e;
+  color: #FFFFFF;
+}
+
+.navbar a:active {
+  color: #FFFFFF;
+}
+
+/*--------------------middle section-------------------- */
+.middle {
+  position: relative;
+  background-image: url('images/pizza.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 960px;
+}
+
+.order-now {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  font-weight: bold;
+  padding: 40px 60px;
+  border: 5px solid #BF5B04;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.order-now:link {
+  color: #BF5B04;
+}
+
+.order-now:visited {
+  color: #BF5B04;
+}
+
+.order-now:hover {
+  background-color: #BF5B04;
+  color: #F2F0D8;
+  border: 5px dashed #73330E;
+  font-size: 45px;
+  padding: 50px 70px;
+}
+
+.order-now:active {
+  color: black;
+}
+
+/*---------------------deals section-------------------*/
+
+.deals {
+  text-align: center;
+  background-color: #F2F0D8;
+  height: 200px;
+  padding: 50px 400px;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+}
+
+.row {
+  color: #73330E;
+  height: 500px;
+  background-color: #F2F0D8;
+  padding-left: 60px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  padding: 40px;
+  text-align: center;
+  background-color: #F2F0D8;
+  margin: 0 50px;
+}
+
+.margherita {
+  height: 200px;
+  width: 200px;
+  border-radius: 30%;
+  margin-bottom: 20px;
+}
+
+/* --------------------- login form  page --------------------*/
+.login-form {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  color: #BF5B04;
+  background-color: #F2F0D8;
+  border: 1px solid #BF5B04;
+  border-radius: 5%;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 18px 20px 10px 20px;
+  margin: 15px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid #BF5B04;
+  border-radius: 50px;
+}
+
+.signup, .login {
+  padding: 10px 30px;
+  margin: 30px 0;
+  width: 100%;
+  color:#F2F0D8;
+  background-color: #BF5B04;
+  border-radius: 50px;
+  font-size: 14pt;
+}
+
+.signup:hover, .login:hover {
+  background-color: #F2F0D8;
+  color: #BF5B04;
+
+}
+
+.psw {
+  position: relative;
+  left: 40%;
+  text-decoration: none;
+}
+
+.psw a:link {
+  color: #BF5B04;
+}
+
+.psw a:visited {
+  color: #73330E;
+}
+
+/*-------------------- menu page------------------*/
+#menu-section {
+  position: relative;
+  height: 1500px;
+  background-color: #d9a66e;
+}
+
+.menu {
+  position: absolute;
+  left: 165px;
+}
+
+.column-menu {
+  float: left;
+  width: 20%;
+  padding: 20px;
+}
+
+.row-menu::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*--- checkout box ----*/
+.checkout {
+  position: absolute;
+  border: 1px solid #BF5B04;
+  width: 20%;
+  top: 85px;
+  right: 20px;
+  background: #F2F0D8;
+  padding: 14px;
+}
+
+.checkout a:link {
+  color: #BF5B04;
+}
+
+.checkout a:visited {
+  color: #73330E;
+}
+
+.add {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 50px;
+  font-size: 14pt;
+}
+
+.add:hover {
+  background-color: #BF5B04;
+  color: #F2F0D8;
+}
+
+.price {
+  float: right;
+  color: #73330E;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+/*--------------------------footer-----------------------*/
+.footer {
+  position: relative;
+  text-align: center;
+  padding: 30px;
+  background-color: #BF5B04;
+}
+
+.contact {
+  padding-bottom: 25px;
+}
+
+.social {
+  position: absolute;
+  bottom: 5px;
+  left: 41%;
+  font-size: 25px;
+}
+
+.social a {
+  color: #F2F0D8;
+}
+
+.social a:hover {
+  color: #73330E;
+}
+
+.social a:active {
+  color: #FFFFFF;
+}
+
+.social-icon {
+  padding: 20px;
+}
